@@ -1181,7 +1181,6 @@ Display drivers:
   maintainers:
     - JarmouniA
   collaborators:
-    - jfischer-no
     - danieldegrasse
     - VynDragon
     - KATE-WANG-NXP
@@ -1326,6 +1325,7 @@ Documentation Infrastructure:
     - boards/shields/canis_canpico/
     - boards/shields/mcp2515/
     - boards/shields/mikroe_can_fd_6_click/
+    - boards/shields/mikroe_mcp251xfd_click/
     - boards/shields/tcan4550evm/
     - doc/connectivity/canbus/
     - doc/hardware/peripherals/can/
@@ -1459,6 +1459,7 @@ Documentation Infrastructure:
     - nordic-krch
   collaborators:
     - Holt-Sun
+    - FelixWang47831
   files:
     - drivers/counter/
     - include/zephyr/drivers/counter.h
@@ -1518,6 +1519,7 @@ Documentation Infrastructure:
     - lgirdwood
     - iuliana-prodan
     - dbaluta
+    - abonislawski
   files:
     - drivers/dai/
     - doc/hardware/peripherals/audio/dai.rst
@@ -2229,6 +2231,7 @@ Documentation Infrastructure:
   collaborators:
     - anangl
     - henrikbrixandersen
+    - FelixWang47831
   files:
     - drivers/pwm/
     - dts/bindings/pwm/
@@ -3058,6 +3061,7 @@ Intel Platforms (Xtensa):
     - jxstelter
     - marcinszkudlinski
     - nashif
+    - abonislawski
   files:
     - boards/intel/adsp/
     - soc/intel/intel_adsp/
@@ -3406,11 +3410,14 @@ Microchip RISC-V Platforms:
   collaborators:
     - kgugala
     - tgorochowik
+    - con-pax
   files:
     - boards/microchip/m2gl025_miv/
     - boards/microchip/mpfs_icicle/
+    - boards/microchip/pic64gx_curiosity_kit/
     - dts/riscv/microchip/
     - soc/microchip/miv/
+    - soc/microchip/pic64/
   labels:
     - "platform: Microchip RISC-V"
 
@@ -4251,6 +4258,7 @@ PMCI:
   collaborators:
     - nashif
     - kehintel
+    - edersondisouza
   files:
     - subsys/pmci/
     - samples/subsys/pmci/
@@ -4319,6 +4327,16 @@ Power management:
     - "area: Power Management"
   tests:
     - pm
+
+QNX Hypervisor Platforms:
+  status: maintained
+  maintainers:
+    - soburi
+  files:
+    - boards/blackberry/qnxhv_vm/
+    - soc/blackberry/qnxhv_vm/
+  labels:
+    - "platform: QNX Hypervisor"
 
 "Quicklogic Platform":
   status: odd fixes
@@ -4924,6 +4942,17 @@ Silabs SiM3U Platforms:
   description: >-
     SiM3U SoCs, dts files, and related drivers. Boards based on SiM3U SoCs.
 
+Space Cubics Platforms:
+  status: maintained
+  maintainers:
+    - yashi
+  files:
+    - boards/sc/
+  labels:
+    - "platform: Space Cubics"
+  description: >-
+    Space Cubics on-board computers (OBCs).
+
 State machine framework:
   status: maintained
   maintainers:
@@ -5248,6 +5277,7 @@ Twister:
     - gchwier
     - LukaszMrugala
     - KamilxPaszkiet
+    - fundakol
   files:
     - scripts/twister
     - scripts/schemas/twister/
